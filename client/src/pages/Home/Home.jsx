@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import HomeText from "../../components/home-text/HomeText";
 
 const Home = () => {
   return (
-    <div>
-      
+    <div className="home">
+      <HomeText />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
