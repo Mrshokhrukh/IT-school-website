@@ -13,7 +13,9 @@ const Header = () => {
           </span>
         </div>
         <div className="head-lf">
-          <Link to='/courses' className="link-to-courses">Kurslarimiz</Link>
+          <Link to="/courses" className="link-to-courses">
+            Kurslarimiz
+          </Link>
           <div className="login">
             <span className="login-icon">
               <IoMdLogIn />
