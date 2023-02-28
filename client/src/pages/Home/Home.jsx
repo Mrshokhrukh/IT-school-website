@@ -1,9 +1,10 @@
 import React from "react";
-import HomeText from "../../components/home-text/HomeText";
+import HomeText from "../../components/home-main-container/Home-main-container";
+
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="container">
       <HomeText />
     </div>
   );

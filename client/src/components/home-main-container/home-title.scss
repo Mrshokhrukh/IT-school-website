@@ -1,0 +1,29 @@
+.home-main-container {
+  width: 100%;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  .center-lf {
+    animation-duration: 1s;
+    .title {
+      text-transform: uppercase;
+      line-height: 78px;
+      font-size: 72px;
+      font-weight: 600;
+      span {
+        color: var(--main-color);
+      }
+    }
+  }
+
+  .center-rt {
+    margin-top: 55px;
+    margin-right: 55px;
+    animation-duration: 0.8s;
+    cursor: pointer;
+    
+  }
+}
