@@ -1,14 +1,49 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./home-title.scss";
-import homeImg from "../../images/home-svg.svg";
+// import homeImg from "../../images/home-svg.svg";
 
 const HomeText = () => {
+  let autoChangingText = useRef(null);
+
+  useEffect(() => {
+    let txtsLength = document.querySelectorAll(".auto-changing-text").length;
+    let values = document.querySelectorAll(".auto-changing-text");
+    let index = 0;
+
+    function animateText() {
+      for (let i = 0; i < txtsLength; i++) {
+        values[i].classList.remove("fade-in");
+      }
+
+      values[index].classList.add("fade-in");
+
+      if (index === txtsLength - 1) {
+        index = 0;
+      } else {
+        index++;
+      }
+
+      setTimeout(animateText, 3500);
+    }
+
+    animateText();
+  }, []);
+
   return (
     <div className="home-main-container">
       <div className="center-lf animate__animated animate__backInLeft">
-        <h1 className="title ">
-          Dasturlashni <br /> qulay <span>muhitda</span> <br /> O'rganing
+        <h1 className="title">
+          zamonaviy kasblarni <br />
+          <p>
+            <span className="auto-changing-text">qulay muhitda</span>
+            <span className="auto-changing-text">it-schoolda</span>
+            <span className="auto-changing-text">masofadan turib</span>
+            <span className="auto-changing-text">mutaxasislardan</span>
+            <span className="auto-changing-text">biz bilan</span>
+          </p>
+          O'rganing
         </h1>
+        
       </div>
 
       <div className="center-rt animate__animated animate__backInRight">
@@ -22,8 +57,6 @@ const HomeText = () => {
         ></lottie-player>
 
         {/* <img src={homeImg} alt="404" className="home-img" /> */}
-
-       
       </div>
     </div>
   );
