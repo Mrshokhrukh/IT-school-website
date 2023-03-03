@@ -43,11 +43,7 @@ img {
   transition: 0.5s ease;
 }
 
-@media (max-width: 1440px) {
-  .container {
-    max-width: 1201px;
-  }
-}
+
 
 a {
   text-decoration: none;
@@ -75,16 +71,33 @@ a {
 /*-------------------media query screen sizes------------------*/
 
 @media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1201px;
+  }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1201px) {
+  .container {
+    max-width: 1024px;
+  }
 }
 @media screen and (max-width: 1024px) {
+  .container {
+    max-width: 901px;
+  }
 }
 @media screen and (max-width: 901px) {
+  .container {
+    max-width: 768px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
 }
+
 @media screen and (max-width: 480px) {
+  
 }
 @media screen and (max-width: 320px) {
 }
