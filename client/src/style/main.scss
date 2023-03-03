@@ -20,7 +20,7 @@
   --active: rgb(60, 42, 218);
   --main-color: rgb(32, 8, 139);
   --selection: rgb(60, 42, 218);
-  --section:#4C1C84;
+  --section: #4c1c84;
 }
 
 body {
@@ -40,9 +40,10 @@ img {
 .container {
   max-width: 1440px;
   margin: auto;
+  transition: 0.5s ease;
 }
 
-@media (max-width: 1401px) {
+@media (max-width: 1440px) {
   .container {
     max-width: 1201px;
   }
@@ -69,4 +70,21 @@ a {
   &:active {
     background-color: var(--active);
   }
+}
+
+/*-------------------media query screen sizes------------------*/
+
+@media screen and (max-width: 1440px) {
+}
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 901px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 320px) {
 }

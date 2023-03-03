@@ -3,42 +3,35 @@
   height: auto;
 
   .header {
-    height: 120px;
+    height: 130px;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    transition: 0.5s ease;
+
     .head-lf {
       display: flex;
       align-items: center;
+      padding: 0 35px;
 
       .logo {
-        // width: 200px;
-        // height: 50px;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // border-radius: 15px;
-        // transition: .2s ease;
         img {
           cursor: pointer;
-          width: 180px;
-          height: 42px;
+          width: 200px;
+          height: 45px;
         }
-
-        // &:hover {
-        //   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        // }
       }
     }
 
     .head-rt {
       display: flex;
-      gap: 50px;
+      gap: 33px;
       align-items: center;
+      padding: 0 35px;
 
       a {
         text-align: center;
-        font-size: 18px;
+        font-size: 22px;
         color: black;
         font-weight: 500;
         display: inline-block;
@@ -63,15 +56,15 @@
       }
 
       .login {
-        width: 126px;
+        width: 128px;
         height: 47px;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 8px;
+        gap: 7px;
         background-color: #fff;
         border-radius: 50px;
-        font-size: 20px;
+        font-size: 22px;
         cursor: pointer;
         transition: 0.5s;
 
@@ -87,5 +80,51 @@
   }
 }
 
-@media (max-width: 1310px) {
+@media (max-width: 1440px) {
+  .head {
+    .header {
+      height: 100px;
+      .head-lf {
+        .logo {
+          img {
+            width: 185px;
+            height: 40px;
+          }
+        }
+      }
+      .head-rt {
+        a {
+          font-size: 20px;
+        }
+        .login {
+          width: 125px;
+          height: 45px;
+          font-size: 20px;
+          .login-icon {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1201px) {
+  .head {
+    .header {
+      height: 90px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 901px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 320px) {
 }
