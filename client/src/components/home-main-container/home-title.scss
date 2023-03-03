@@ -5,12 +5,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
   .center-lf {
     animation-duration: 1s;
-    
+
     .title {
-       
       text-transform: uppercase;
       margin-top: -120px;
       line-height: 63px;
@@ -26,21 +24,39 @@
         color: var(--main-color);
       }
       .auto-changing-text {
+        display: inline-block;
         display: none;
       }
 
       span.fade-in {
         display: block;
-        animation: changingText 1s ease;
+        animation: changingText 5.5s ease;
       }
       @keyframes changingText {
         0% {
           transform: translateY(-100%);
+          opacity: 0.1;
+        }
+        50% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        25% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        75% {
+          transform: translateY(90%);
+          opacity: 0.5;
         }
         100% {
-          transform: translateY(0%);
+          transform: translateY(100%);
+          opacity: 0.2;
         }
       }
+    }
+    .title::after {
+      content: "...";
     }
   }
 
