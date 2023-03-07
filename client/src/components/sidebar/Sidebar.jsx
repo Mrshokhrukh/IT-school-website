@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./sidebar.scss";
-const Sidebar = () => {
+const Sidebar = (props) => {
+  
   return (
-    <div className="sidebar">
+    <div className={props.isOpen ? "sidebar openSidebar" : " sidebar"}>
       <ul>
-       
         <li>
           <Link to="">Kurslarimiz</Link>
         </li>

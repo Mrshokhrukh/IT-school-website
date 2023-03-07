@@ -4,7 +4,7 @@
   .header {
     height: 130px;
     background-color: #fff;
-    
+
     display: flex;
     justify-content: space-between;
     transition: 0.5s ease;
@@ -76,9 +76,10 @@
           margin-top: 7px;
         }
       }
-      
     }
-   
+    .hamburger {
+      display: none;
+    }
   }
 }
 
@@ -209,7 +210,9 @@
       .head-rt {
         display: none;
       }
-     
+      .hamburger {
+        display: block;
+      }
     }
   }
 }

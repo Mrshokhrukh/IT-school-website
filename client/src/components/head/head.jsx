@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { IoMdLogIn } from "react-icons/io";
 import logo from "../../images/rakhmonov.png";
 import "./head.scss";
+import "../../style/humburger.scss";
 const Head = (props) => {
-  
-
-
+  const handleClick = () => {
+    props.toggleSidebar(true);
+  };
 
   return (
     <div className="head">
@@ -32,6 +33,14 @@ const Head = (props) => {
               <span>kirish</span>
             </div>
           </div>
+
+          <div class="hamburger" onClick={handleClick}>
+            <div class="hamburger__container">
+              <div class="hamburger__inner"></div>
+              <div class="hamburger__hidden"></div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>

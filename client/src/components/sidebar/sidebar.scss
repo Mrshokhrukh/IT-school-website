@@ -3,7 +3,7 @@
   width: 320px;
   background-color: yellow;
   height: 100vh;
-  //   transform: translate(100%);
+  transform: translate(100%);  
   right: 0;
   top: 0;
   z-index: 100;
@@ -48,4 +48,7 @@
       }
     }
   }
+}
+.openSidebar{
+transform: translate(0%);
 }
