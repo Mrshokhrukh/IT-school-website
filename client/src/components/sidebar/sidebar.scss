@@ -1,9 +1,9 @@
 .sidebar {
   position: absolute;
   width: 320px;
-  background-color: yellow;
+  background-color: royalblue;
   height: 100vh;
-  transform: translate(100%);  
+  transform: translate(100%);
   right: 0;
   top: 0;
   z-index: 100;
@@ -19,7 +19,7 @@
     li {
       border: 0.1px solid rgba(128, 128, 128, 0.151);
       padding: 10px;
-      
+
       a {
         text-align: center;
         font-size: 18px;
@@ -29,7 +29,6 @@
 
         &:hover {
           color: rgb(3, 23, 134);
-            
         }
 
         &::after {
@@ -49,6 +48,8 @@
     }
   }
 }
-.openSidebar{
-transform: translate(0%);
+.openSidebar {
+  transform: translate(0);
+ 
 }
+

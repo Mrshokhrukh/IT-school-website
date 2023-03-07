@@ -2,6 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./sidebar.scss";
 const Sidebar = (props) => {
+
+  const [width, setWidth] = useState();
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWidth(window.innerWidth);
+      if (width < 768) {
+        
+      } 
+    };
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [width]);
+
   
   return (
     <div className={props.isOpen ? "sidebar openSidebar" : " sidebar"}>

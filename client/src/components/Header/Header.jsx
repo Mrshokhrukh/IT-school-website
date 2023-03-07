@@ -6,14 +6,12 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
-    
   };
-
 
   return (
     <div>
       <Head toggleSidebar={toggleSidebar} />
-      <Sidebar isOpen={isOpen}/>
+      <Sidebar isOpen={{ sidebar: isOpen, toggleSidebar: toggleSidebar }} />
     </div>
   );
 };
