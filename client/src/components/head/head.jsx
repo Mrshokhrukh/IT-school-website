@@ -34,11 +34,11 @@ const Head = (props) => {
             </div>
           </div>
          {/*   sidebar open humburger  */}
+
+
           <div class="hamburger" >
-            <div class="hamburger__container" onClick={handleClick}>
-              <div class="hamburger__inner"></div>
-              <div class="hamburger__hidden"></div>
-            </div>
+          
+          
           </div>
           
         </div>
