@@ -37,7 +37,7 @@
         display: inline-block;
 
         &:hover {
-          color:var(--active);
+          color: var(--active);
         }
 
         &::after {
@@ -77,8 +77,42 @@
         }
       }
     }
-    .hamburger {
+    .clickable_humburger_menu {
+      height: 100%;
+      display: grid;
+      align-items: center;
+      padding: 0 35px;
       display: none;
+      .lines {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        align-items: center;
+        gap: 4px;
+        &:hover {
+          .line {
+            background-color: var(--active);
+            width: 30px;
+          }
+        }
+        .line {
+          width: 30px;
+          height: 2px;
+          background-color: black;
+          border-radius: 20px;
+          transition: 0.3s;
+        }
+
+        .first {
+          width: 19px;
+          align-self: flex-start;
+        }
+        .third {
+          width: 19px;
+          align-self: flex-end;
+        }
+      }
     }
   }
 }
@@ -210,8 +244,8 @@
       .head-rt {
         display: none;
       }
-      .hamburger {
-        display: block;
+      .clickable_humburger_menu {
+        display: flex;
       }
     }
   }

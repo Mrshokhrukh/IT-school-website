@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./home-title.scss";
 // import homeImg from "../../images/home-svg.svg";
 
 const HomeText = () => {
-  let autoChangingText = useRef(null);
-
   useEffect(() => {
     let txtsLength = document.querySelectorAll(".auto-changing-text").length;
     let values = document.querySelectorAll(".auto-changing-text");
@@ -28,7 +27,7 @@ const HomeText = () => {
 
     animateText();
   }, []);
-
+  
   return (
     <div className="home-main-container">
       <div className="center-lf animate__animated animate__backInLeft">
@@ -43,7 +42,17 @@ const HomeText = () => {
           </p>
           O'rganing
         </h1>
-        
+        <div className="home_info">
+          <div className="home_info_text">
+            <p>
+              Zamonaviy kasblarni o'rganishga shoshiling.. <br />
+              Hali ham o'ylab o'tiribsizmi ?
+            </p>
+          </div>
+          <button className="button courses-btn">
+            <Link to="/courses">Kurslarimiz</Link>
+          </button>
+        </div>
       </div>
 
       <div className="center-rt animate__animated animate__backInRight">
@@ -53,7 +62,7 @@ const HomeText = () => {
           speed="1"
           loop
           autoplay
-          style={{ width: "450px" }}
+          
         ></lottie-player>
 
         {/* <img src={homeImg} alt="404" className="home-img" /> */}

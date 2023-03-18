@@ -5,16 +5,40 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: royalblue;
+  // background-color: red;
+
   .center-lf {
     animation-duration: 1s;
-
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .home_info {
+      display: grid;
+      row-gap: 25px;
+      .home_info_text {
+        font-size: 22px;
+        font-family: Lato, sans-serif;
+        color: var(--text);
+        text-transform: none;
+        font-weight: 600;
+      }
+      .courses-btn {
+        width: 155px;
+        height: 38px;
+        a {
+          text-decoration: none;
+          color: black;
+          font-weight: 500;
+        }
+      }
+    }
     .title {
       text-transform: uppercase;
       line-height: 63px;
       font-size: 56px;
       font-weight: 600;
-      // padding: 0 35px;
-
       p {
         overflow: hidden;
       }
@@ -53,14 +77,48 @@
         }
       }
     }
+
     .title::after {
-      content:"...";
+      content: "...";
     }
   }
 
   .center-rt {
     animation-duration: 0.8s;
     cursor: pointer;
-    // padding: 0 35px;
+    padding: 0 35px;
+    width: 550px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .home-main-container {
+    .center-lf {
+      .title {
+        // color: red;
+        font-size: 45px;
+        line-height: 55px;
+      }
+    }
+    .center-rt {
+      width: 450px;
+    }
+  }
+}
+@media (max-width: 1201px) {
+  .home-main-container {
+    .center-lf {
+      padding: 0 20px;
+      background-color: red;
+      .title {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    .center-rt {
+      width: 350px;
+      padding: 0 20px;
+      background-color: rgb(0, 255, 106);
+    }
   }
 }

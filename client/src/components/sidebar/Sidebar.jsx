@@ -1,20 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { IoClose } from "react-icons/io5";
 import "./sidebar.scss";
 const Sidebar = (props) => {
-  // const [width, setWidth] = useState();
-  // useEffect(() => {
-  //   const handleWindowResize = () => {
-  //     setWidth(window.innerWidth);
-  //     if (width < 768) {
-
-  //     }
-  //   };
-  //   window.addEventListener("resize", handleWindowResize);
-  //   return () => {
-  //     window.removeEventListener("resize", handleWindowResize);
-  //   };
-  // }, [width]);
+  const closeSidebar = () => {
+    props.toggleSidebar(false);
+  };
 
   return (
     <div className={props.isOpen ? "sidebar openSidebar" : "sidebar"}>
@@ -24,6 +15,9 @@ const Sidebar = (props) => {
       <div className="line-4"></div>
       <div className="line-5"></div>
 
+      <span className="close">
+        <IoClose onClick={closeSidebar} />
+      </span>
       <ul>
         <li>
           <Link to="">Kurslarimiz</Link>

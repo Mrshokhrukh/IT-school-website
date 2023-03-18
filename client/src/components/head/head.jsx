@@ -33,14 +33,15 @@ const Head = (props) => {
               <span>kirish</span>
             </div>
           </div>
-         {/*   sidebar open humburger  */}
+          {/*   sidebar open humburger  */}
 
-
-          <div class="hamburger" >
-          
-          
+          <div className="clickable_humburger_menu">
+            <div className={"lines"} onClick={handleClick}>
+              <div className="line first"></div>
+              <div className="line second"></div>
+              <div className="line third"></div>
+            </div>
           </div>
-          
         </div>
       </div>
     </div>
