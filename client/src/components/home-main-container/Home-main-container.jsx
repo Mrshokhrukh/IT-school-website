@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./home-title.scss";
-// import homeImg from "../../images/home-svg.svg";
+import "./home.responsive.scss";
+import homeImg from "../../images/home-svg.svg";
 
 const HomeText = () => {
   useEffect(() => {
@@ -27,7 +28,7 @@ const HomeText = () => {
 
     animateText();
   }, []);
-  
+
   return (
     <div className="home-main-container">
       <div className="center-lf animate__animated animate__backInLeft">
@@ -50,20 +51,13 @@ const HomeText = () => {
             </p>
           </div>
           <button className="button courses-btn">
-            <Link to="/courses">Kurslarimiz</Link>
+            <Link to="/courses">Kurslar bilan tanishish</Link>
           </button>
         </div>
       </div>
 
       <div className="center-rt animate__animated animate__backInRight">
-        <lottie-player
-          src="https://assets8.lottiefiles.com/packages/lf20_iorpbol0.json"
-          background="transparent"
-          speed="1"
-          loop
-          autoplay
-          
-        ></lottie-player>
+        <img src={homeImg} alt="" />
 
         {/* <img src={homeImg} alt="404" className="home-img" /> */}
       </div>
