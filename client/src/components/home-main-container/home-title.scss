@@ -1,12 +1,9 @@
 .home-main-container {
   width: 100%;
-  margin: 33px auto;
+  margin: 120px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  // background-color: red;
-  // background-color: red;
 
   .center-lf {
     animation-duration: 1s;
@@ -26,11 +23,15 @@
       }
       .courses-btn {
         width: 215px;
-        height: 38px;
+        height: 41px;
+
         a {
           text-decoration: none;
-          color: black;
+          color: rgb(255, 255, 255);
           font-weight: 500;
+        }
+        &:hover {
+          background-color: var(--active);
         }
       }
     }

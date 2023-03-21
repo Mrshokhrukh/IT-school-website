@@ -19,7 +19,7 @@
   --main-color: rgb(32, 8, 139);
   --selection: rgb(60, 42, 218);
   --section: #4c1c84;
-  --hover: rgba(85, 27, 219, 0.897);
+  --hover: rgb(70, 4, 224);
   --text: rgb(120, 139, 155);
 }
 
@@ -51,7 +51,7 @@ a {
 .button {
   width: 150px;
   height: 45px;
-  background-color: var(--buttons);
+  background-color: var(--main-color);
   color: white;
   font-size: 18px;
   border-radius: 50px;

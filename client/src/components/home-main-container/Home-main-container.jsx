@@ -47,7 +47,8 @@ const HomeText = () => {
           <div className="home_info_text">
             <p>
               Zamonaviy kasblarni o'rganishga shoshiling.. <br />
-              Hali ham o'ylab o'tiribsizmi ?
+              O'zingizga qulay bo'lgan vaqtda tajribali <br />
+              mutaxassislardan ta'lim oling !
             </p>
           </div>
           <button className="button courses-btn">
