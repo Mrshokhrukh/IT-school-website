@@ -11,18 +11,18 @@ const Head = (props) => {
   useEffect(() => {
     const handleWindowSize = () => {
       setScroll(window.scrollY);
-      if (scroll > 40 && window.innerWidth > 768) {
+      if (scroll > 80 && window.innerWidth > 768) {
         header.current.style.height = "80px";
         header_box_shadow.current.style.boxShadow =
           "rgba(100, 100, 111, 0.1) 0px 6px 26px 0px";
-      } else if (scroll < 40) {
+      } else if (scroll < 80) {
         header_box_shadow.current.style.boxShadow = "none";
-      } else if (scroll > 40 && window.innerWidth < 768) {
+      } else if (scroll > 80 && window.innerWidth < 768) {
         header_box_shadow.current.style.boxShadow =
           "rgba(100, 100, 111, 0.1) 0px 6px 26px 0px";
         header.current.style.height = "65px";
       }
-      if (scroll < 40 && window.innerWidth > 1201) {
+      if (scroll < 80 && window.innerWidth > 1201) {
         header.current.style.height = "100px";
       }
     };
