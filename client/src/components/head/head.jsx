@@ -25,6 +25,9 @@ const Head = (props) => {
       if (scroll < 80 && window.innerWidth > 1201) {
         header.current.style.height = "100px";
       }
+      if (window.innerWidth < 512) {
+        header.current.style.height = "60px";
+      }
     };
 
     window.addEventListener("scroll", handleWindowSize);
