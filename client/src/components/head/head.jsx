@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { IoMdLogIn } from "react-icons/io";
 import logo from "../../images/rakhmonov.png";
 import "./head.scss";
+import "./head.responsive.scss";
 import "../../style/humburger.scss";
 const Head = (props) => {
   const header = useRef();
@@ -51,19 +52,20 @@ const Head = (props) => {
           </div>
 
           <div className="head-rt">
-            <Link to="/" className="link-to-courses">
+            <Link to="/" className="head-links">
+              Biz haqimizda
+            </Link>
+            <Link to="/" className="head-links">
               bootcamp
             </Link>
-            <Link to="/courses" className="link-to-courses">
+            <Link to="/courses" className="head-links">
               Kurslarimiz
             </Link>
             <div className="login">
-              <Link to="">
-                <span className="login-icon">
-                  <IoMdLogIn />
-                </span>
-                <span>kirish</span>
-              </Link>
+              <span className="login-icon">
+                <IoMdLogIn />
+              </span>
+              <span>kirish</span>
             </div>
           </div>
           {/*   sidebar open */}

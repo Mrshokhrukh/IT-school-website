@@ -3,13 +3,14 @@
 @media (max-width: 1440px) {
   .home-main-container {
     .center-lf {
+      padding: 10px 15px;
       .title {
-        // color: red;
-        font-size: 45px;
+        font-size: 56px;
         line-height: 55px;
       }
     }
     .center-rt {
+      padding: 10px;
       img {
         width: 450px;
       }
@@ -23,8 +24,8 @@
       padding: 0 20px;
 
       .title {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 45px;
+        line-height: 46px;
       }
       .home_info {
         row-gap: 15px;
