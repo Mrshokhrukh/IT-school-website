@@ -8,18 +8,21 @@ import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
 const Login = () => {
   return (
-    <div className="container">
+    <div className="auth_page">
       <div className="wave-img-auth-page">
-        <img src={waveImg} alt="404" />
+        <img src={waveImg} alt="404" className="wave" />
       </div>
+
       <div className="user_auth_form">
-        <img src={developerImg} alt="404" />
+        <div className="dev-Svg-Img">
+          <img src={developerImg} alt="404" />
+        </div>
         <div className="user_auth">
           <form onSubmit={""}>
-            <img src={svgAvatar} alt="404" />
-            <h2>Kirish</h2>
+            <img src={svgAvatar} alt="404" className="avatar" />
+            <h2 className="form-title">Kirish</h2>
             <div className="input-div">
-              <div className="user-icon">
+              <div className="form-icons">
                 <span>
                   <FaUser />
                 </span>
@@ -30,7 +33,7 @@ const Login = () => {
               </div>
             </div>
             <div className="input-div">
-              <div className="user-icon">
+              <div className="form-icons">
                 <span>
                   <FaLock />
                 </span>
@@ -43,6 +46,7 @@ const Login = () => {
             <Link to="" className="link-auth">
               forgot password ?
             </Link>
+            <br />
             <button className="auth-btn">Kirish</button>
           </form>
         </div>

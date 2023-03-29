@@ -23,6 +23,8 @@
   --text: rgb(120, 139, 155);
   --white-color: #ffffff;
   --darkmode: rgb(9, 2, 49);
+  --gray-lines: rgba(73, 73, 73, 0.158);
+  --gray: rgba(110, 110, 110, 0.5);
 }
 
 body {
@@ -71,7 +73,6 @@ a {
 }
 
 /*-------------------media query screen sizes------------------*/
-
 
 @media screen and (max-width: 1440px) {
   .container {
