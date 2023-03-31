@@ -80,7 +80,7 @@
               left: 10px;
               top: 50%;
               transform: translateY(-50%);
-              color: var(--darkBlue);
+              color: var(--normalBlue);
               font-size: 18px;
               transition: 0.3s;
             }
@@ -107,6 +107,7 @@
         .input-div.focus div h5 {
           top: -5px;
           font-size: 15px;
+          color: var(--gray);
         }
 
         .input-div::after,
@@ -116,7 +117,7 @@
           bottom: -2px;
           width: 0;
           height: 2px;
-          background-color: red;
+          background-color: var(--main-color);
         }
         .input-div::before {
           left: 50%;

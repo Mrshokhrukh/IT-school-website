@@ -5,11 +5,12 @@ import svgAvatar from "../../images/avatar.auth.svg";
 import developerImg from "../../images/computerPerson.svg";
 import waveImg from "../../images/wave-haikei.svg";
 import { FaUser } from "react-icons/fa";
-import { FaLock } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 const Login = () => {
-  let inputs = useRef(null);
   const handleFocus = (e) => {
-    // e.currentTarget.classList.add("dsad");
+    let focusInputDiv = document.querySelectorAll(".input-div")[1];
+    focusInputDiv.classList.add("focus");
+    // e.currentTarget.setAttribute(`value`, `+9989()`);
   };
 
   const handleSubmit = () => {};
@@ -27,14 +28,14 @@ const Login = () => {
           <form onSubmit={handleSubmit}>
             <img src={svgAvatar} alt="404" className="avatar" />
             <h2 className="form-title">Kirish</h2>
-            <div className="input-div" ref={inputs}>
+            <div className="input-div">
               <div className="form-icons">
                 <span>
                   <FaUser />
                 </span>
               </div>
               <div>
-                <h5>Username</h5>
+                <h5>foydalanuvchi ismi</h5>
                 <input
                   type="text"
                   className="input"
@@ -43,19 +44,20 @@ const Login = () => {
                 />
               </div>
             </div>
-            <div className="input-div" ref={inputs}>
+            <div className="input-div">
               <div className="form-icons">
                 <span>
-                  <FaLock />
+                  <FaPhone />
                 </span>
               </div>
               <div>
-                <h5>Password</h5>
+                <h5>Telefon raqam</h5>
                 <input
-                  type="password"
+                  type="text"
                   className="input"
-                  name="password"
+                  name="phone_number"
                   onFocus={handleFocus}
+                  maxLength="16"
                 />
               </div>
             </div>
